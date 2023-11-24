@@ -1,25 +1,32 @@
 <!DOCTYPE html>
-<html>
-<head>
-    <title> calculadora de hidratacion  </title>
-</head>
+<html lang="es">
+    <head>  
+        <script src="script.js"></script>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=2.0">
+        <title>Calculadora de Hidratación</title>
+        <link rel="stylesheet" href="style.css">
+    </head>
 <body>
-    <div>
-        <div>
-    <h1> hidratacion Basal</h1>
-    <input type="number" placeholder="peso en kg"?>
-    <p>* Debe completar todos los datos</p>
-    <button> Calcular</button>
-    <p>71cc/h</p>
-    <p>m+m/2 : 105cc/h</p>
+    <div id="padre"> 
+        <div id="contenedor">
+            <h1>Calculadora Basal</h1>
+            <label for="peso">Peso en kg:</label>
+             <div id="cajadepeso"><input type="number" id="peso" placeholder="Ingrese su peso"></div>
+             <p class="nota">* Por favor, complete todos los datos.</p>
+             <button onclick="calcularHidratacion()">Calcular</button>
+             <p id="resultado">71cc/h</p>
+             <p>m+m/2: 105cc/h</p>
         </div>
-    <h1> como se calcula?</h1>
-    <u1> 
-        <li> de 0kg a 10kg, se calcula 100cc por cada kilo.</li>
-        <li> se suman 50 cc por cada kilo de peso pro arriba de 10kg, hasta 20kg</li>
-        <li> de 29kg para arriba se suman 20cc por cada kilo adiconal</li>
-    </u1>
-    </div> 
+        <div class="datos">
+            <h1>¿Cómo se calcula?</h1>
+            <ul>
+                <li>De 0kg a 10kg, se calcula 100cc por cada kilo.</li>
+                <li>Se suman 50cc por cada kilo de peso por encima de 10kg, hasta 20kg.</li>
+                <li>De 29kg para arriba, se suman 20cc por cada kilo adicional.</li>
+            </ul>
+        </div>
+    </div>
+    
 </body>
- 
 </html>
