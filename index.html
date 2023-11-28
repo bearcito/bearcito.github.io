@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html lang="es">
     <head>  
-        <script src="script.js"></script>
+        <script src="script.js" defer></script>
         <meta charset="UTF-8">
         <meta name="viewport" content="width=device-width, initial-scale=2.0">
         <title>Calculadora de Hidratación</title>
@@ -12,9 +12,10 @@
         <div id="contenedor">
             <h1>Calculadora Basal</h1>
             <label for="peso">Peso en kg:</label>
-             <div id="cajadepeso"><input type="number" id="peso" placeholder="Ingrese su peso"></div>
+             <div id="cajadepeso">
+                <input type="number" id="peso" placeholder="Ingrese su peso"></div>
              <p class="nota">* Por favor, complete todos los datos.</p>
-             <button onclick="calcularHidratacion()">Calcular</button>
+             <button id="boton" >Calcular</button>
              <p id="resultado">71cc/h</p>
              <p>m+m/2: 105cc/h</p>
         </div>
