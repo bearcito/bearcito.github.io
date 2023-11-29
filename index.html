@@ -1,23 +1,26 @@
 <!DOCTYPE html>
 <html lang="es">
-    <head>  
-        <script src="script.js" defer></script>
-        <meta charset="UTF-8">
-        <meta name="viewport" content="width=device-width, initial-scale=2.0">
-        <title>Calculadora de Hidratación</title>
-        <link rel="stylesheet" href="style.css">
-    </head>
+<head>
+    <script src="script.js" defer></script>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=2.0">
+    <title>Calculadora de Hidratación</title>
+    <link rel="stylesheet" href="style.css">
+</head>
 <body>
     <div id="padre"> 
         <div id="contenedor">
             <h1>Calculadora Basal</h1>
             <label for="peso">Peso en kg:</label>
-             <div id="cajadepeso">
-                <input type="number" id="peso" placeholder="Ingrese su peso"></div>
-             <p class="nota">* Por favor, complete todos los datos.</p>
-             <button id="boton" >Calcular</button>
-             <p id="resultado">71cc/h</p>
-             <p>m+m/2: 105cc/h</p>
+            <div id="cajadepeso">
+                <input type="number" id="peso" placeholder="Ingrese su peso">
+            </div>
+            <p id="error1">Ingrese los datos por favor</p>
+            <p class="nota" id="error2">* Por favor, complete todos los datos.</p>
+            <button id="boton">Calcular</button>
+            <p id="resultado">71cc/h</p>
+            <p id="mantenimientomm2">m+m/2: </p>
+            <p id="dosis">105cc/h</p>
         </div>
         <div class="datos">
             <h1>¿Cómo se calcula?</h1>
@@ -28,6 +31,5 @@
             </ul>
         </div>
     </div>
-    
 </body>
 </html>
